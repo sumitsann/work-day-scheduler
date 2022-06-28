@@ -1,7 +1,11 @@
 //display the date
-var dateNow = moment().format("dddd, MMM Do YYYY");
 
-$("#currentDay").html(dateNow);
+function showTime() {
+  var dateNow = moment().format("LL");
+  var timeNow = moment().format("hh:mm:ssA");
+  $("#currentDay").html(dateNow);
+  $("#currentTime").html(timeNow);
+}
 
 // save user input in localstorage
 
@@ -56,3 +60,6 @@ $("#14 .task-description").val(localStorage.getItem("14"));
 $("#15 .task-description").val(localStorage.getItem("15"));
 $("#16 .task-description").val(localStorage.getItem("16"));
 $("#17 .task-description").val(localStorage.getItem("17"));
+
+showTime();
+setInterval(showTime, 1000);
