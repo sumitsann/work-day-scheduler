@@ -9,7 +9,7 @@ function saveUserInput() {
   var time = $(this).parent().attr("id");
   var task = $(this).siblings(".task-description").val();
 
-  localStorage.setItem(time, JSON.stringify(task));
+  localStorage.setItem(time, task);
 }
 
 //save the task in save button click
@@ -43,3 +43,16 @@ function classifyTimeClass() {
   });
 }
 classifyTimeClass();
+
+//Getting the task from local storage
+
+$("#8 .task-description").val(localStorage.getItem("8"));
+$("#9 .task-description").val(localStorage.getItem("9"));
+$("#10 .task-description").val(localStorage.getItem("10"));
+$("#11 .task-description").val(localStorage.getItem("11"));
+$("#12 .task-description").val(localStorage.getItem("12"));
+$("#13 .task-description").val(localStorage.getItem("13"));
+$("#14 .task-description").val(localStorage.getItem("14"));
+$("#15 .task-description").val(localStorage.getItem("15"));
+$("#16 .task-description").val(localStorage.getItem("16"));
+$("#17 .task-description").val(localStorage.getItem("17"));
