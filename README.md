@@ -12,7 +12,7 @@ A website that provides the users the ability to save the events that will happe
 none
 
 ## Website
-https://sumitsann.github.io/password_generator/
+(https://sumitsann.github.io/work-day-scheduler/)
 
 ## Contribution
 Made with ❤️ by Sumit Ojha
